@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pixelport_store | اشتراكات وشحن</title>
+  <style>
+    :root {
+      --main-color: #000;
+      --accent-color: #1a1a1a;
+      --highlight: #d4af37;
+      --bg-color: #111;
+      --product-bg: #1a1a1a;
+      --text-color: #fff;
+    }
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      background: var(--bg-color);
+      margin: 0;
+      color: var(--text-color);
+    }
+    header {
+      background: var(--main-color);
+      padding: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--highlight);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--main-color), var(--accent-color));
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .products-section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+    }
+    .products-title {
+      color: var(--highlight);
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .products-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      background: var(--product-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
+    }
+    .product-img {
+      width: 100%;
+      height: 180px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .product-title {
+      color: var(--highlight);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--highlight);
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    footer {
+      background: var(--main-color);
+      text-align: center;
+      padding: 1rem 0;
+      color: var(--highlight);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">pixelport_store</div>
+      <ul>
+        <li><a href="#products">المنتجات</a></li>
+        <li><a href="https://www.instagram.com/pixelport_store?igsh=Z2phdTJ1MmE5YXg2" target="_blank">اطلب عبر إنستغرام</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>أهلاً بك في pixelport_store</h1>
+    <p>اشحن ألعابك وفعّل اشتراكاتك بسهولة وثقة</p>
+  </section>
+
+  <section id="products" class="products-section">
+    <div class="products-title">منتجاتنا</div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('pubg.jpg');"></div>
+        <div class="product-title">شدات ببجي</div>
+        <a class="buy-btn" href="https://www.instagram.com/pixelport_store?igsh=Z2phdTJ1MmE5YXg2" target="_blank">اطلب الآن</a>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('freefire.jpg');"></div>
+        <div class="product-title">جواهر فري فاير</div>
+        <a class="buy-btn" href="https://www.instagram.com/pixelport_store?igsh=Z2phdTJ1MmE5YXg2" target="_blank">اطلب الآن</a>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('shahid.jpg');"></div>
+        <div class="product-title">اشتراك شاهد VIP</div>
+        <a class="buy-btn" href="https://www.instagram.com/pixelport_store?igsh=Z2phdTJ1MmE5YXg2" target="_blank">اطلب الآن</a>
+      </div>
+      <div class="product-card">
+        <div class="product-img" style="background-image: url('tod.jpg');"></div>
+        <div class="product-title">اشتراك TOD</div>
+        <a class="buy-btn" href="https://www.instagram.com/pixelport_store?igsh=Z2phdTJ1MmE5YXg2" target="_blank">اطلب الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة - pixelport_store
+  </footer>
+</body>
+</html>
